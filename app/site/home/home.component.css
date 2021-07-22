@@ -1,0 +1,49 @@
+h4{
+    color: yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+img{
+    border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  }
+  img:hover {
+    opacity: 0.5;
+  }
+p{
+    border-style: solid  ;
+    border-color:grey;
+    border-radius: 12px;
+    text-align: justify;
+    padding: 10px;
+    font-family: "Times New Roman", Times, serif;
+
+  }
+  body{
+    background-image: url('src/assets/backgrounds/0.jpg');
+    background-size: cover;
+    background-attachment: local;
+    background-repeat: no-repeat ;
+    background-position: center;
+     }
+     .button2 {
+      background-color: rgb(57, 215, 236); 
+      color: black; 
+      border: 2px solid #008CBA;
+    }
+    
+    .button2:hover {
+      background-color: #008CBA;
+      color: white;
+    }
+
+    .button3 {
+      background-color: rgb(236, 57, 176); 
+      color: black; 
+      border: 2px solid rgb(236, 57, 176);
+    }
+    
+    .button3:hover {
+      background-color: #e6388f;
+      color: white;
+    }

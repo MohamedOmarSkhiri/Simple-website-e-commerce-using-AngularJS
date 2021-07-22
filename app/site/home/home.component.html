@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="home.component.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    </head>
+    <body><br>
+        <button class="button button2">T-Shirt Mens</button>
+<div style="display: flex; justify-content: space-around;">
+    <div *ngFor="let f of tabShirts">
+        <div *ngIf="f.disponible">
+            <h4>  {{f.Marque}} </h4>
+            <img [src]='f. imageShirts' width="300" height="300" ><br>
+            <p *ngIf="f.descVisible">{{f.description}}</p>
+            <button  *ngIf ="!f.descVisible" (click)="afficheDesc(f)" class="btn btn-danger">More details</button>
+            <button  *ngIf ="f.descVisible"(click)="cacherDesc(f)" class="btn btn-danger">Less details</button><br>
+            <label for="SHIRTS"><button class="button button2">Size</button></label>
+                <select id="SHIRTS" name="shirts" form="shirts">
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                </select><br>
+            <button (click)="onAcheter(f)" class="btn btn-success" >Add to the Cart<span class="glyphicon glyphicon-shopping-cart"  aria-hidden="true"></span> </button>
+            <button type="button" class="btn btn-lg btn-primary">{{f.Acheter}}</button>
+            <button (click)="onRetirer(f)" class="btn btn-warning" >Remove from the cart <span class="glyphicon glyphicon-remove"  aria-hidden="true"></span> </button>
+        </div>
+    </div>
+</div><br><br>
+<button class="button button3">T-Shirt Womens</button>
+<div style="display: flex; justify-content: space-around;">
+    <div *ngFor="let f of tabShirt">
+        <div *ngIf="f.disponible">
+            <h4>  {{f.Marque}} </h4>
+            <img [src]='f. imageShirts' width="300" height="300" ><br>
+            <p *ngIf="f.descVisible">{{f.description}}</p><br>
+    <button  *ngIf ="!f.descVisible" (click)="afficheDesc(f)" class="btn btn-danger" >More details</button>
+    <button  *ngIf ="f.descVisible"(click)="cacherDesc(f)" class="btn btn-danger">Less details</button><br>
+               <label for="SHIRTS"><button class="button button3">Size</button></label>
+                <select id="SHIRTS" name="Shirt" form="shirt">
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                </select><br>
+            <button (click)="onAcheter(f)" class="btn btn-success" >Add to the cart <span class="glyphicon glyphicon-shopping-cart"  aria-hidden="true"></span> </button>
+            <button type="button" class="btn btn-lg btn-primary" disabled="disabled">{{f.Acheter}}</button>
+            <button (click)="onRetirer(f)" class="btn btn-warning" >Remove from the cart <span class="glyphicon glyphicon-remove"  aria-hidden="true"></span> </button>
+            
+        </div>
+    </div>
+</div>
+<button class="button button2">Shoes Mens</button>
+<div style="display: flex; justify-content: space-around;">
+    <div *ngFor="let f of tabShoes">
+        <div *ngIf="f.disponible">
+            <h4>  {{f.Marque}} </h4>
+            <img [src]='f. imageShoes' width="300" height="300" ><br>
+            <p *ngIf="f.descVisible">{{f.description}}</p>
+            <button  *ngIf ="!f.descVisible" (click)="afficheDesc(f)" class="btn btn-danger">More details</button>
+            <button  *ngIf ="f.descVisible"(click)="cacherDesc(f)" class="btn btn-danger">Less details</button><br>
+            <label for="SHIRTS"><button class="button button2">Size</button></label>
+                <select id="SHIRTS" name="shirts" form="shirts">
+                <option value="s">35</option>
+                <option value="m">37</option>
+                <option value="l">39</option>
+                <option value="xl">40</option>
+                <option value="d">42</option>
+
+                </select><br>
+            <button (click)="onAcheter(f)" class="btn btn-success" >Add to the cart <span class="glyphicon glyphicon-shopping-cart"  aria-hidden="true"></span> </button>
+            <button type="button" class="btn btn-lg btn-primary" disabled="disabled">{{f.Acheter}}</button>
+            <button (click)="onRetirer(f)" class="btn btn-warning" >Remove from the cart <span class="glyphicon glyphicon-remove"  aria-hidden="true"></span> </button>
+        </div>
+    </div>
+</div><br><br>
+<button class="button button3">Shoes Womens</button>
+<div style="display: flex; justify-content: space-around;">
+    <div *ngFor="let f of tabShoess">
+        <div *ngIf="f.disponible">
+            <h4>  {{f.Marque}} </h4>
+            <img [src]='f.  imageShoes      ' width="300" height="300" ><br>
+            <p *ngIf="f.descVisible">{{f.description}}</p><br>
+    <button  *ngIf ="!f.descVisible" (click)="afficheDesc(f)" class="btn btn-danger" >More details</button>
+    <button  *ngIf ="f.descVisible"(click)="cacherDesc(f)" class="btn btn-danger">Less details</button><br>
+               <label for="SHIRTS"><button class="button button3">Size</button></label>
+                <select id="SHIRTS" name="Shirt" form="shirt">
+                <option value="s">30</option>
+                <option value="m">33</option>
+                <option value="l">34</option>
+                <option value="xl">38</option>
+                <option value="d">39</option>
+                </select><br>
+            <button (click)="onAcheter(f)" class="btn btn-success" >Add to the cart <span class="glyphicon glyphicon-shopping-cart"  aria-hidden="true"></span> </button>
+            <button type="button" class="btn btn-lg btn-primary" disabled="disabled">{{f.Acheter}}</button>
+            <button (click)="onRetirer(f)" class="btn btn-warning" >Remove from the cart  <span class="glyphicon glyphicon-remove"  aria-hidden="true"></span> </button>
+            
+        </div>
+    </div>
+</div>
+        </body>
+</html>

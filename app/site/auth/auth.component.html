@@ -1,0 +1,11 @@
+<html>
+<head>
+    <link rel="stylesheet" href="auth.component.css">
+</head>
+<h2 data-text="Accès seulement pour administrateur">Access only for administrator</h2>
+<form>
+<label>Username</label><br><input type="text" #login ><br>
+<label>Password</label><br><input type="password" #pass ><br><br>
+<button (click)="seconnecter(login.value, pass.value)" class="btn btn-outline-danger">Connect</button>
+</form>
+ </html>

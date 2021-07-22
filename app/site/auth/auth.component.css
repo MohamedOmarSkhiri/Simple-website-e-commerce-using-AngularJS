@@ -1,0 +1,32 @@
+
+
+input[type=text] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+  border-radius: 4px;
+  }
+  input[type=text]:focus {
+    background-color: rgb(206, 198, 178);
+  }
+  input[type=password] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+  border-radius: 4px;
+  }
+  input[type=password]:focus {
+    background-color:rgb(206, 198, 178);
+  }
+  form{
+    background-color: rgba(226, 226, 215, 0.5);
+     }
+
+h2{
+  color:red;
+}
+ 
